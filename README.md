@@ -35,12 +35,17 @@ This is another paragraph. Lorem ipsum dolor sit amet, consectetur adipisc ut la
 ## A block quote.
 > It should be in block quotes! Lorem ipsum dolor sit amet, consectetur incididunt ut labore et dolore magna aliqua.
 
-## Inline code:make this word `inline` and then normal text,
+## Inline code
+make this word `inline` and then normal text.
+## code block
 ```python
 def foo():
-if not bar:
-return True
+  if not bar:
+   return True
      pass
+
+##image
+
 ![image](https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.)
 
 def my_function():
