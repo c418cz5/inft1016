@@ -37,12 +37,12 @@ This is another paragraph. Lorem ipsum dolor sit amet, consectetur adipisc ut la
 
 ## Inline code
 make this word `inline`.
-
-## Code block
 ```python
 def foo():
 if not bar:
 return True
+
+
 
 ![image](https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.)
 
