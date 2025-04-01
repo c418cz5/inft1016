@@ -90,11 +90,8 @@ if not bar:
 return True
 ![image](https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.)
 
-[Here's a link!](https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750 "Click to view image")
 def my_function():
 print("Hello from a function"))
 
-[Here's a link!](https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750 "Click to view image")
-def my_function():
-print("Hello from a function")
+
 
