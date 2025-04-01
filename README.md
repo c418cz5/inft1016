@@ -37,18 +37,22 @@ This is another paragraph. Lorem ipsum dolor sit amet, consectetur adipisc ut la
 
 ## Inline code
 make this word `inline` and then normal text.
-## code block
-```python
+## Code block
+'''python
 def foo():
-  if not bar:
-   return True
-     pass
+if not bar:
+return True
 
-##image
 
-![image](https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.)
+![image](https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)
+
+| Number | Colour | Size |
+| ------ | ------ | ----- |
+| 111 | Blue | Medium|
 
 def my_function():
 print("Hello from a function")
+
+
 
 
