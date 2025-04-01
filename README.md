@@ -1,3 +1,7 @@
+# inft1016
+info tech 
+#3 rick 523588
+#1477624023@qq.com
 # This is a large heading.
 
 This is a paragraph. Text goes here. Lorem ipsum dolor sit amet, consectetur incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qui ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehender fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in est laborum.
@@ -40,12 +44,9 @@ def foo():
 if not bar:
 return True
 
-| Number | Colour | Size |
-| ------ | ------ | ----- |
-| 111 | Blue | Medium|
+![image](https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.)
 
 def my_function():
 print("Hello from a function")
-
 
 
