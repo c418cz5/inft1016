@@ -1,34 +1,54 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link type='text/css' rel='stylesheet' href='week9style.css'/>
-        <title>Styled Webpage</title>
-    </head>
-    <body>
-        <header>
-            <h1>My Website</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <article>
-                <h2>Article Title</h2>
-                <p>Here is some article content. <a href="#">This is a link</a>.</p>
-                <h3>Sub - Title</h3>
-                <p>More content related to the sub - title.</p>
-            </article>
-            <aside>
-                <h2>Sidebar</h2>
-                <p>Some sidebar content. <a href="#">Another link</a>.</p>
-            </aside>
-        </main>
-        <footer>
-            <p>&copy; 2025 My Website</p>
-        </footer>
-    </body>
-</html>    
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="week9style.css">
+    <title>Styled Webpage</title>
+</head>
+
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Our team</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <form action="#" method="get">
+            <input type="text" placeholder="Search query">
+            <input type="submit" value="Go">
+        </form>
+    </nav>
+    <main>
+        <article>
+            <h2>Article heading</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.</p>
+            <h3>Subsection</h3>
+            <p>Donec ut libero sed accu vehicula ultrices a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor.</p>
+            <p>Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus, enim sit amet elit pharetra tincidunt feugiat nist imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros.</p>
+            <h3>Another subsection</h3>
+            <p>Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et manis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.</p>
+            <p>Vivamus fermentum semper porta. Nunc diam velit, adipscing ut tristique vitae sagittis vel odio. Maecenas convallis ullamcorper ultricied. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, is fringille sem nunc vet mi.</p>
+        </article>
+        <aside>
+            <h2>Related</h2>
+            <ul>
+                <li><a href="#">Oh I do like to be beside the seaside</a></li>
+                <li><a href="#">Oh I do like to be beside the sea</a></li>
+                <li><a href="#">Although in the North of England</a></li>
+                <li><a href="#">It never stops raining</a></li>
+                <li><a href="#">Oh well...</a></li>
+            </ul>
+        </aside>
+    </main>
+    <footer>
+        <p>©Copyright 2050 by nobody. All rights reversed.</p>
+    </footer>
+</body>
+
+</html>
