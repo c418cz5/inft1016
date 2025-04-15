@@ -1,10 +1,34 @@
 <!DOCTYPE html>
 <html>
     <head>
-     <link type='text/css' rel='stylesheet' href='week9style.css'/>
+        <link type='text/css' rel='stylesheet' href='week9style.css'/>
+        <title>Styled Webpage</title>
     </head>
-<body>
-<h1></h1>
-<p></p>
-</body>
-</html>
+    <body>
+        <header>
+            <h1>My Website</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <article>
+                <h2>Article Title</h2>
+                <p>Here is some article content. <a href="#">This is a link</a>.</p>
+                <h3>Sub - Title</h3>
+                <p>More content related to the sub - title.</p>
+            </article>
+            <aside>
+                <h2>Sidebar</h2>
+                <p>Some sidebar content. <a href="#">Another link</a>.</p>
+            </aside>
+        </main>
+        <footer>
+            <p>&copy; 2025 My Website</p>
+        </footer>
+    </body>
+</html>    
