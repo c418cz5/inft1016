@@ -1,0 +1,165 @@
+#task1 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic JavaScript Test</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 flex justify-center items-center h-screen">
+    <a href="#" onclick="alert('Hey!');" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+        Click me
+    </a>
+</body>
+
+</html> 
+
+#task2
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic JavaScript Test</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 flex flex-col justify-center items-center h-screen space-y-4">
+    <a href="#" onclick="document.getElementById('box').innerHTML = 'You clicked it!';" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+        Click me
+    </a>
+    <div id="box" class="bg-white p-4 rounded shadow-md">
+    </div>
+</body>
+
+</html>  
+
+#task3
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic JavaScript Test</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 flex flex-col justify-center items-center h-screen space-y-4">
+    <a href="#" onclick="document.getElementById('box').innerHTML = '<li>The link was pressed 1 times.</li>';" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+        Click me
+    </a>
+    <ul id="box" class="bg-white p-4 rounded shadow-md list-disc list-inside">
+        <!-- 初始可无内容 -->
+    </ul>
+</body>
+
+</html>
+
+#task4 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic JavaScript Test</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 flex flex-col justify-center items-center h-screen space-y-4">
+    <a href="#" onclick="document.getElementById('box').innerHTML = '<li>The link was pressed 1 times.</li>';" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+        Click me
+    </a>
+    <ul id="box" class="bg-white p-4 rounded shadow-md list-disc list-inside">
+        <!-- 初始可无内容 -->
+    </ul>
+</body>
+
+</html>    
+#task5 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 11</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <script>
+        let counter = 0;
+
+        function countClicks(element) {
+            counter = counter + 1;
+            const output = 'The link was pressed ' + counter + ' times.';
+            element.innerHTML = output;
+        }
+    </script>
+</head>
+
+<body class="bg-gray-100 flex flex-col justify-center items-center h-screen space-y-4">
+    <h1 class="text-3xl font-bold text-gray-800">JavaScript Demo</h1>
+    <a href="#" onclick="countClicks(this);" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+        Click me
+    </a>
+    <p id="boxy" class="bg-white p-4 rounded shadow-md"></p>
+</body>
+
+</html>    
+
+
+
+#task6
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Swap with JavaScript</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 flex flex-col justify-center items-center h-screen space-y-4">
+    <h1 class="text-3xl font-bold text-gray-800">Image Swap Demo</h1>
+    <img src="http://www.outgrabe.net/cat01.jpg" 
+         onmouseover="this.src='http://www.outgrabe.net/cat02.jpg'" 
+         onmouseout="this.src='http://www.outgrabe.net/cat01.jpg'" 
+         onclick="this.alt='You clicked the image!'"
+         class="cursor-pointer shadow-md rounded">
+    <p id="info" class="text-gray-700">Hover over the image to change it. Click to add an alt text.</p>
+</body>
+
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
