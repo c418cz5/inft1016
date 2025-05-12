@@ -1,47 +1,34 @@
 # Battleship Gallery
 
-This project is a simple interactive webpage built with HTML, CSS, and JavaScript for INFT1016. The purpose of the website is to showcase five famous battleships, with interactive image and theme switching functionalities.
+A simple interactive web page that showcases five famous battleships with image switching, theme toggle, and user greeting.
 
 ## Features
 
-* **Five Battleships Display**:
+- Switch between five battleship images.
+- Toggle between light and dark theme.
+- Enter and store username in local storage.
+- Responsive and accessible design.
 
-  * USS Enterprise
-  * Bismarck
-  * San Diego
-  * Yamato
-  * New Jersey
-* **Image and Caption Switching**:
+## Technologies Used
 
-  * Buttons allow the user to switch between different battleships.
-  * Captions update accordingly.
-* **Light/Dark Theme Toggle**:
+- HTML
+- CSS
+- JavaScript
 
-  * The user can switch between light and dark themes.
-  * Theme preference is saved using localStorage.
-* **User Name Input**:
-
-  * User can enter their name which is shown in the page header (e.g., "Hello, Rick!").
-  * The name is stored and retained using localStorage.
-
-## File Structure
-
-* `index.html` - Main structure of the webpage.
-* `style.css` - Styling and theme definitions.
-* `script.js` - JavaScript functionality for theme switching, image updates, and localStorage interaction.
-
-## How to Use
+## How to Run
 
 1. Clone the repository or download the files.
-2. Open `index.html` in your browser.
-3. Use the buttons to switch ships and toggle theme.
-4. Enter your name to personalize the greeting.
+2. Open `index.html` in a web browser.
+3. Interact with the theme button, name form, and ship buttons.
 
-## Image Credits
+## Image Sources
 
-All battleship images used are hosted on GitHub, provided by the project owner.
+All images hosted on GitHub via raw links provided by user.
 
 ## Author
+
+Created by rick
+
 
 Rick - INFT1016 Student (Eynesbury College)
 Student ID: 523588
