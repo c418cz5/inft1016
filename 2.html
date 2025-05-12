@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <title>Battleship Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1 id="greeting">Hello!</h1>
+    <button id="toggle-theme">Toggle Theme</button>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Our Team</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <form id="name-form">
+      <input type="text" name="user_name" id="user_name" placeholder="Enter your name!">
+      <button type="submit">Apply!</button>
+    </form>
+  </nav>
+
+  <main>
+    <section>
+      <div id="image-display">
+        <img id="ship-image" src="https://github.com/c418cz5/inft1016/blob/main/%E4%BC%81%E4%B8%9A%E5%8F%B7.jpg?raw=true" alt="Battleship">
+        <p id="caption">USS Enterprise</p>
+      </div>
+
+      <div class="button-group">
+        <button onclick="showShip(0)">Enterprise</button>
+        <button onclick="showShip(1)">Bismarck</button>
+        <button onclick="showShip(2)">San Diego</button>
+        <button onclick="showShip(3)">Yamato</button>
+        <button onclick="showShip(4)">New Jersey</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Battleship Gallery. All rights reserved.</p>
+  </footer>
+</body>
+</html>
