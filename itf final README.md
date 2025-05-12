@@ -1,6 +1,6 @@
 <h1 align="center">WWII Battleships Gallery</h1>
 <p align="center">
-    <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white" alt="HTML5">
+    ![image](https://github.com/c418cz5/inft1016/blob/main/%E4%BC%81%E4%B8%9A%E5%8F%B7.jpg))
     <img src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white" alt="CSS3">
     <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black" alt="JavaScript">
     <img src="https://img.shields.io/github/last-commit/c418cz5/inft1016" alt="Last Commit">
