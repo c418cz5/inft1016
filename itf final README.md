@@ -2,8 +2,14 @@
 <p align="center">
     ![image](https://github.com/c418cz5/inft1016/blob/main/%E4%BC%81%E4%B8%9A%E5%8F%B7.jpg))
     ![image](https://github.com/c418cz5/inft1016/blob/main/%E4%BC%81%E4%B8%9A%E7%AB%8B%E7%BB%98.jpg)
-    <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black" alt="JavaScript">
-    <img src="https://img.shields.io/github/last-commit/c418cz5/inft1016" alt="Last Commit">
+    ![image](https://github.com/c418cz5/inft1016/blob/main/%E4%BF%BE%E6%96%AF%E9%BA%A6.jpg))
+    ![image](https://github.com/c418cz5/inft1016/blob/main/%E4%BF%BE%E6%96%AF%E9%BA%A6%E7%AB%8B%E7%BB%98.jpg)
+    ![image](https://github.com/c418cz5/inft1016/blob/main/%E5%9C%A3%E5%9C%B0%E4%BA%9A%E5%93%A5.jpg)
+    ![image](https://github.com/c418cz5/inft1016/blob/main/%E5%9C%A3%E5%9C%B0%E4%BA%9A%E5%93%A5%E7%AB%8B%E7%BB%98.png)
+    ![image](https://github.com/c418cz5/inft1016/blob/main/%E5%A4%A7%E5%92%8C.jpg)
+    ![image](https://github.com/c418cz5/inft1016/blob/main/%E6%AD%A6%E8%97%8F%E7%AB%8B%E7%BB%98.jpg)
+    ![image](https://github.com/c418cz5/inft1016/blob/main/%E6%96%B0%E6%B3%BD%E8%A5%BF.jpg)
+    ![image](https://github.com/c418cz5/inft1016/blob/main/%E6%96%B0%E6%B3%BD%E8%A5%BF%E7%AB%8B%E7%BB%98.jpg)
 </p>
 
 ## Project Overview
