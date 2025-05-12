@@ -1,10 +1,10 @@
 // Ship image data
 const ships = [
-  { name: "USS Enterprise", image: "https://raw.githubusercontent.com/c418cz5/inft1016/main/%E4%BC%81%E4%B8%9A%E5%8F%B7.jpg", caption: "USS Enterprise" },
-  { name: "Bismarck", image: "https://raw.githubusercontent.com/c418cz5/inft1016/main/%E4%BF%BE%E6%96%AF%E9%BA%A6.jpg", caption: "Bismarck" },
-  { name: "San Diego", image: "https://raw.githubusercontent.com/c418cz5/inft1016/main/%E5%9C%A3%E5%9C%B0%E4%BA%9A%E5%93%A5.jpg", caption: "San Diego" },
-  { name: "Yamato", image: "https://raw.githubusercontent.com/c418cz5/inft1016/main/%E5%A4%A7%E5%92%8C.jpg", caption: "Yamato" },
-  { name: "New Jersey", image: "https://raw.githubusercontent.com/c418cz5/inft1016/main/%E6%96%B0%E6%B3%BD%E8%A5%BF.jpg", caption: "New Jersey" },
+  { name: "USS Enterprise", image: "https://github.com/c418cz5/inft1016/blob/main/%E4%BC%81%E4%B8%9A%E5%8F%B7.jpg?raw=true", caption: "USS Enterprise" },
+  { name: "Bismarck", image: "https://github.com/c418cz5/inft1016/blob/main/%E4%BF%BE%E6%96%AF%E9%BA%A6.jpg?raw=true", caption: "Bismarck" },
+  { name: "San Diego", image: "https://github.com/c418cz5/inft1016/blob/main/%E5%9C%A3%E5%9C%B0%E4%BA%9A%E5%93%A5.jpg?raw=true", caption: "San Diego" },
+  { name: "Yamato", image: "https://github.com/c418cz5/inft1016/blob/main/%E5%A4%A7%E5%92%8C.jpg?raw=true", caption: "Yamato" },
+  { name: "New Jersey", image: "https://github.com/c418cz5/inft1016/blob/main/%E6%96%B0%E6%B3%BD%E8%A5%BF.jpg?raw=true", caption: "New Jersey" },
 ];
 
 // Function to show the selected ship's image and caption
@@ -44,3 +44,4 @@ document.getElementById('name-form').addEventListener('submit', (e) => {
   localStorage.setItem('user_name', userName);
   document.getElementById('greeting').innerText = `Hello, ${userName}!`;
 });
+
