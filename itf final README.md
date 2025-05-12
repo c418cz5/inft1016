@@ -1,6 +1,6 @@
 <h1 align="center">WWII Battleships Gallery</h1>
 <p align="center">
-    ![image](https://github.com/c418cz5/inft1016/blob/main/%E4%BC%81%E4%B8%9A%E5%8F%B7.jpg))
+    ![Yamato Class Battleship](https://raw.githubusercontent.com/c418cz5/inft1016/main/企业号.jpg)))
     ![image](https://github.com/c418cz5/inft1016/blob/main/%E4%BC%81%E4%B8%9A%E7%AB%8B%E7%BB%98.jpg)
     ![image](https://github.com/c418cz5/inft1016/blob/main/%E4%BF%BE%E6%96%AF%E9%BA%A6.jpg))
     ![image](https://github.com/c418cz5/inft1016/blob/main/%E4%BF%BE%E6%96%AF%E9%BA%A6%E7%AB%8B%E7%BB%98.jpg)
