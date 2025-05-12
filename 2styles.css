@@ -1,104 +1,64 @@
 /* Default light theme */
 :root {
-  --primary-color: #ffffff;
-  --secondary-color: #f0f0f0;
-  --bg-color: #ffffff;
-  --font-color: #000000;
-  --heading-color: #003366;
+  --primary-color: rgb(255, 255, 255);
+  --secondary-color: rgb(240, 240, 240);
+  --bg-color: rgb(255, 255, 255);
+  --font-color: rgb(0, 0, 0);
+  --heading-color: rgb(0, 0, 0);
 }
 
-/* Dark theme */
 [data-theme="dark"] {
-  --primary-color: #121212;
-  --secondary-color: #1e1e1e;
-  --bg-color: #121212;
-  --font-color: #e0e0e0;
-  --heading-color: #66ccff;
+  --primary-color: rgb(0, 0, 0);
+  --secondary-color: rgb(30, 30, 30);
+  --bg-color: rgb(30, 30, 30);
+  --font-color: rgb(255, 255, 255);
+  --heading-color: rgb(255, 255, 255);
 }
 
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
   background-color: var(--bg-color);
   color: var(--font-color);
+  font-family: Arial, sans-serif;
 }
 
 header {
-  background-color: var(--secondary-color);
-  padding: 20px;
   text-align: center;
+  padding: 20px;
 }
 
-header h1 {
+h1 {
   color: var(--heading-color);
 }
 
-nav {
-  background-color: var(--secondary-color);
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 15px;
-  padding: 0;
-  margin: 0;
-}
-
-nav ul li a {
-  text-decoration: none;
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  background-color: var(--primary-color);
   color: var(--font-color);
+  cursor: pointer;
 }
 
-form {
-  display: flex;
-  gap: 10px;
+button:hover {
+  background-color: var(--secondary-color);
 }
 
-main {
-  padding: 20px;
+#image-display {
   text-align: center;
 }
 
-#image-display img {
-  width: 80%;
-  max-width: 500px;
+img {
+  max-width: 100%;
   height: auto;
-  border-radius: 8px;
-  margin-bottom: 10px;
 }
 
 .button-group {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin-top: 15px;
-}
-
-.button-group button, #toggle-theme {
-  padding: 10px 20px;
-  border: none;
-  background-color: var(--heading-color);
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.button-group button:hover, #toggle-theme:hover {
-  background-color: #444;
+  text-align: center;
+  margin-top: 20px;
 }
 
 footer {
   text-align: center;
-  padding: 15px;
+  padding: 20px;
   background-color: var(--secondary-color);
-  color: var(--font-color);
-  margin-top: 20px;
 }
