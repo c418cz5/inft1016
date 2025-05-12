@@ -1,0 +1,32 @@
+:root {
+    --primary-color: #f8f9fa;
+    --secondary-color: #e9ecef;
+    --bg-color: #ffffff;
+    --font-color: #212529;
+    --heading-color: #2c3e50;
+}
+
+[data-theme="dark"] {
+    --primary-color: #2d3436;
+    --secondary-color: #34495e;
+    --bg-color: #2c3e50;
+    --font-color: #ecf0f1;
+    --heading-color: #bdc3c7;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    transition: all 0.3s ease;
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 1rem;
+}
+
+button {
+    background-color: var(--secondary-color);
+    color: var(--font-color);
+    border: 1px solid var(--heading-color);
+}
