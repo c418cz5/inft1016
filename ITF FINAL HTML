@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WWII Battleship Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+</head>
+<body data-theme="light">
+    <header>
+        <h1>Historic Battleships</h1>
+        <button onclick="toggleTheme()">🌓 Toggle Theme</button>
+    </header>
+    
+    <main>
+        <div class="gallery-container">
+            <!-- 初始显示企业号 -->
+            <img id="ship-image" src="https://github.com/c418cz5/inft1016/blob/main/%E4%BC%81%E4%B8%9A%E5%8F%B7.jpg" 
+                 alt="USS Enterprise">
+            <p id="ship-description">USS Enterprise (CV-6) - Most decorated US Navy ship of WWII</p>
+            
+            <!-- 战舰选择按钮 -->
+            <div class="button-group">
+                <button onclick="showShip('enterprise')">Enterprise</button>
+                <button onclick="showShip('bismarck')">Bismarck</button>
+                <button onclick="showShip('san_diego')">San Diego</button>
+                <button onclick="showShip('musashi')">Musashi</button>
+                <button onclick="showShip('new_jersey')">New Jersey</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <form onsubmit="updateUsername(event)">
+            <input type="text" name="user_name" placeholder="Enter your name">
+            <button type="submit">Apply</button>
+        </form>
+    </footer>
+</body>
+</html>
