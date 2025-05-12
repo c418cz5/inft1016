@@ -44,7 +44,7 @@ if not bar:
 return True
 
 
-![image](https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)
+![image](https://github.com/c418cz5/inft1016/blob/main/%E4%BC%81%E4%B8%9A%E5%8F%B7.jpg))
 
 | Number | Colour | Size |
 | ------ | ------ | ----- |
