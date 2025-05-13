@@ -2,16 +2,16 @@
   --primary-color: #ffffff;
   --secondary-color: #f0f0f0;
   --bg-color: #ffffff;
-  --font-color: #333333;
-  --heading-color: #1a1a1a;
+  --font-color: #000000;
+  --heading-color: #2c3e50;
 }
 
 [data-theme="dark"] {
   --primary-color: #1f1f1f;
-  --secondary-color: #2d2d2d;
+  --secondary-color: #121212;
   --bg-color: #121212;
   --font-color: #ffffff;
-  --heading-color: #dddddd;
+  --heading-color: #3498db;
 }
 
 body {
@@ -23,29 +23,45 @@ body {
 }
 
 header, nav, footer {
-  background-color: var(--secondary-color);
-  padding: 1rem;
+  background-color: var(--primary-color);
+  padding: 1em;
 }
 
-h1, h2 {
-  color: var(--heading-color);
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1em;
+}
+
+main {
+  padding: 2em;
+}
+
+#image-display img {
+  max-width: 500px;
+  height: auto;
+  border: 2px solid var(--secondary-color);
 }
 
 .button-group button {
-  margin: 0.5rem;
-  padding: 0.5rem 1rem;
-  background-color: var(--primary-color);
+  margin: 0.5em;
+  padding: 0.5em 1em;
+  background-color: var(--secondary-color);
   color: var(--font-color);
-  border: 1px solid var(--font-color);
 }
 
 .wiki-link {
-  color: var(--font-color);
+  display: block;
+  margin-top: 10px;
+  color: var(--heading-color);
   text-decoration: none;
 }
 
-.image-container img {
-  max-width: 100%;
-  height: auto;
-  border: 2px solid var(--primary-color);
+.wiki-link:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3 {
+  color: var(--heading-color);
 }
