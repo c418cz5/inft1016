@@ -1,23 +1,28 @@
 const ships = [
   {
     name: "Enterprise",
-    image: "https://raw.githubusercontent.com/c418cz5/inft1016/main/企业号.jpg"
+    image: "https://raw.githubusercontent.com/c418cz5/inft1016/main/%E4%BC%81%E4%B8%9A%E5%8F%B7.jpg",
+    wiki: "https://en.wikipedia.org/wiki/USS_Enterprise_(CV-6)"
   },
   {
     name: "Bismarck",
-    image: "https://raw.githubusercontent.com/c418cz5/inft1016/main/%E4%BF%BE%E6%96%AF%E9%BA%A6.jpg"
+    image: "https://raw.githubusercontent.com/c418cz5/inft1016/main/%E4%BF%BE%E6%96%AF%E9%BA%A6.jpg",
+    wiki: "https://en.wikipedia.org/wiki/German_battleship_Bismarck"
   },
   {
     name: "San Diego",
-    image: "https://raw.githubusercontent.com/c418cz5/inft1016/main/%E5%9C%A3%E5%9C%B0%E4%BA%9A%E5%93%A5.jpg"
+    image: "https://raw.githubusercontent.com/c418cz5/inft1016/main/%E5%9C%A3%E5%9C%B0%E4%BA%9A%E5%93%A5.jpg",
+    wiki: "https://en.wikipedia.org/wiki/USS_San_Diego_(CL-53)"
   },
   {
     name: "Yamato",
-    image: "https://raw.githubusercontent.com/c418cz5/inft1016/main/%E5%A4%A7%E5%92%8C.jpg"
+    image: "https://raw.githubusercontent.com/c418cz5/inft1016/main/%E5%A4%A7%E5%92%8C.jpg",
+    wiki: "https://en.wikipedia.org/wiki/Japanese_battleship_Yamato"
   },
   {
     name: "New Jersey",
-    image: "https://raw.githubusercontent.com/c418cz5/inft1016/main/%E6%96%B0%E6%B3%BD%E8%A5%BF.jpg"
+    image: "https://raw.githubusercontent.com/c418cz5/inft1016/main/%E6%96%B0%E6%B3%BD%E8%A5%BF.jpg",
+    wiki: "https://en.wikipedia.org/wiki/USS_New_Jersey_(BB-62)"
   }
 ];
 
@@ -45,6 +50,13 @@ window.onload = function() {
 
 function showShip(index) {
   const ship = ships[index];
-  document.getElementById("ship-image").src = ship.image;
+  const imgElement = document.getElementById("ship-image");
+  const wikiLink = document.getElementById("wiki-link");
+  
+  imgElement.src = ship.image;
   document.getElementById("caption").textContent = ship.name;
+  
+  // 更新维基链接
+  wikiLink.href = ship.wiki;
+  wikiLink.textContent = `About ${ship.name} on Wikipedia`;
 }
