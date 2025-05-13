@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <title>Battleship Gallery</title>
+  <style>
+    :root {
+      --primary-color: #f8f9fa;
+      --secondary-color: #e9ecef;
+      --bg-color: #ffffff;
+      --font-color: #212529;
+      --heading-color: #2b2d42;
+    }
+
+    [data-theme="dark"] {
+      --primary-color: #212529;
+      --secondary-color: #343a40;
+      --bg-color: #121212;
+      --font-color: #f8f9fa;
+      --heading-color: #90e0ef;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-color);
+      color: var(--font-color);
+    }
+
+    header, nav, footer {
+      background-color: var(--primary-color);
+      padding: 1rem;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 1rem;
+    }
+
+    .button-group button {
+      margin: 0.5rem;
+      padding: 0.5rem 1rem;
+      background-color: var(--secondary-color);
+      color: var(--font-color);
+      border: 1px solid var(--font-color);
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+      border: 2px solid var(--font-color);
+    }
+
+    .wiki-link {
+      color: var(--heading-color);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 id="greeting">Battleship Gallery</h1>
+    <button onclick="toggleTheme()">Toggle Theme</button>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Our Team</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <form onsubmit="handleSubmit(event)">
+      <input type="text" id="user_name" placeholder="Enter your name!">
+      <button type="submit">Apply!</button>
+    </form>
+  </nav>
+
+  <main>
+    <article>
+      <h2>Featured Battleship</h2>
+      <div class="image-container">
+        <img id="ship-image" src="https://github.com/c418cz5/inft1016/blob/main/%E4%BC%81%E4%B8%9A%E5%8F%B7.jpg?raw=true" alt="Battleship">
+        <p id="caption">Select a ship below</p>
+        <a id="wiki-link" href="#" class="wiki-link">Learn more</a>
+      </div>
+      
+      <div class="button-group">
+        <button onclick="showShip(0)">Enterprise</button>
+        <button onclick="showShip(1)">Bismarck</button>
+        <button onclick="showShip(2)">San Diego</button>
+        <button onclick="showShip(3)">Yamato</button>
+        <button onclick="showShip(4)">New Jersey</button>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Battleship Gallery. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // 战舰数据
+    var ships = [
+      {
+        name: "Enterprise",
+        image: "https://github.com/c418cz5/inft1016/blob/main/%E4%BC%81%E4%B8%9A%E5%8F%B7.jpg?raw=true",
+        wiki: "https://en.wikipedia.org/wiki/USS_Enterprise_(CV-6)"
+      },
+      {
+        name: "Bismarck",
+        image: "https://github.com/c418cz5/inft1016/blob/main/%E4%BF%BE%E6%96%AF%E9%BA%A6.jpg?raw=true",
+        wiki: "https://en.wikipedia.org/wiki/German_battleship_Bismarck"
+      },
+      {
+        name: "San Diego",
+        image: "https://github.com/c418cz5/inft1016/blob/main/%E5%9C%A3%E5%9C%B0%E4%BA%9A%E5%93%A5.jpg?raw=true",
+        wiki: "https://en.wikipedia.org/wiki/USS_San_Diego_(CL-53)"
+      },
+      {
+        name: "Yamato",
+        image: "https://github.com/c418cz5/inft1016/blob/main/%E5%A4%A7%E5%92%8C.jpg?raw=true",
+        wiki: "https://en.wikipedia.org/wiki/Japanese_battleship_Yamato"
+      },
+      {
+        name: "New Jersey",
+        image: "https://github.com/c418cz5/inft1016/blob/main/%E6%96%B0%E6%B3%BD%E8%A5%BF.jpg?raw=true",
+        wiki: "https://en.wikipedia.org/wiki/USS_New_Jersey_(BB-62)"
+      }
+    ];
+
+    // 初始化页面
+    function initialize() {
+      loadTheme();
+      loadUsername();
+    }
+
+    // 主题切换功能
+    function toggleTheme() {
+      var html = document.documentElement;
+      var currentTheme = html.getAttribute("data-theme");
+      var newTheme = currentTheme === "light" ? "dark" : "light";
+      html.setAttribute("data-theme", newTheme);
+      localStorage.setItem("theme", newTheme);
+    }
+
+    // 加载主题
+    function loadTheme() {
+      var savedTheme = localStorage.getItem("theme");
+      if (savedTheme) {
+        document.documentElement.setAttribute("data-theme", savedTheme);
+      }
+    }
+
+    // 处理用户名提交
+    function handleSubmit(event) {
+      event.preventDefault();
+      var nameInput = document.getElementById("user_name");
+      if (nameInput.value) {
+        document.getElementById("greeting").textContent = "Hello, " + nameInput.value + "!";
+        localStorage.setItem("username", nameInput.value);
+        window.location.search = "?user_name=" + encodeURIComponent(nameInput.value);
+      }
+      nameInput.value = "";
+    }
+
+    // 加载用户名
+    function loadUsername() {
+      var params = new URLSearchParams(window.location.search);
+      var storedName = localStorage.getItem("username");
+      
+      if (params.has("user_name")) {
+        var urlName = params.get("user_name");
+        document.getElementById("greeting").textContent = "Hello, " + urlName + "!";
+        localStorage.setItem("username", urlName);
+      } else if (storedName) {
+        document.getElementById("greeting").textContent = "Hello, " + storedName + "!";
+      }
+    }
+
+    // 显示战舰信息
+    function showShip(index) {
+      var ship = ships[index];
+      var img = document.getElementById("ship-image");
+      img.src = ship.image;
+      document.getElementById("caption").textContent = ship.name;
+      document.getElementById("wiki-link").href = ship.wiki;
+    }
+
+    // 页面加载时初始化
+    window.onload = initialize;
+  </script>
+</body>
+</html>
