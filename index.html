@@ -1,15 +1,59 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <title>Battleship Gallery</title>
   <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
+  <script>
+    // 主题切换功能
+    function toggleTheme() {
+      var html = document.documentElement;
+      var currentTheme = html.getAttribute("data-theme");
+      var newTheme = currentTheme === "light" ? "dark" : "light";
+      html.setAttribute("data-theme", newTheme);
+      
+      // 存储主题到本地存储
+      localStorage.setItem("theme", newTheme);
+    }
+
+    // 用户名处理
+    function handleSubmit(event) {
+      event.preventDefault();
+      var nameInput = document.getElementById("user_name");
+      var greeting = document.getElementById("greeting");
+      
+      if (nameInput.value) {
+        greeting.textContent = "Hello, " + nameInput.value + "!";
+        localStorage.setItem("username", nameInput.value);
+      }
+    }
+
+    // 页面加载时初始化
+    function initializePage() {
+      // 初始化主题
+      var savedTheme = localStorage.getItem("theme");
+      if (savedTheme) {
+        document.documentElement.setAttribute("data-theme", savedTheme);
+      }
+
+      // 初始化用户名
+      var params = new URLSearchParams(window.location.search);
+      var storedName = localStorage.getItem("username");
+      
+      if (params.has("user_name")) {
+        var urlName = params.get("user_name");
+        document.getElementById("greeting").textContent = "Hello, " + urlName + "!";
+        localStorage.setItem("username", urlName);
+      } else if (storedName) {
+        document.getElementById("greeting").textContent = "Hello, " + storedName + "!";
+      }
+    }
+  </script>
 </head>
-<body>
+<body onload="initializePage()">
   <header>
-    <h1 id="greeting">Hello!</h1>
-    <button id="toggle-theme">Toggle Theme</button>
+    <h1 id="greeting">Battleship Gallery</h1>
+    <button onclick="toggleTheme()">Toggle Theme</button>
   </header>
 
   <nav>
@@ -19,32 +63,52 @@
       <li><a href="#">Projects</a></li>
       <li><a href="#">Contact</a></li>
     </ul>
-    <form id="name-form">
-      <input type="text" name="user_name" id="user_name" placeholder="Enter your name!">
+    <form onsubmit="handleSubmit(event)">
+      <input type="text" id="user_name" placeholder="Enter your name!">
       <button type="submit">Apply!</button>
     </form>
   </nav>
 
   <main>
-    <section>
-      <div id="image-display">
-        <img id="ship-image" src="https://raw.githubusercontent.com/c418cz5/inft1016/main/%E4%BC%81%E4%B8%9A%E5%8F%B7.jpg" alt="Battleship">
-        <p id="caption">Enterprise</p>
-        <a id="wiki-link" target="_blank" class="wiki-link">Learn more on Wikipedia</a>
+    <article>
+      <h2>Featured Battleship</h2>
+      <div class="image-container">
+        <img id="ship-image" src="https://via.placeholder.com/500x300" alt="Battleship">
+        <p id="caption">Select a ship below</p>
+        <a id="wiki-link" href="#" class="wiki-link">Learn more</a>
       </div>
-
+      
       <div class="button-group">
-        <button type="button" onclick="showShip(0)">Enterprise</button>
-        <button type="button" onclick="showShip(1)">Bismarck</button>
-        <button type="button" onclick="showShip(2)">San Diego</button>
-        <button type="button" onclick="showShip(3)">Yamato</button>
-        <button type="button" onclick="showShip(4)">New Jersey</button>
+        <button onclick="showShip(0)">Enterprise</button>
+        <button onclick="showShip(1)">Bismarck</button>
+        <button onclick="showShip(2)">San Diego</button>
+        <button onclick="showShip(3)">Yamato</button>
+        <button onclick="showShip(4)">New Jersey</button>
       </div>
-    </section>
+    </article>
   </main>
 
   <footer>
-    <p>&copy; 2025 Battleship Gallery. All rights reserved.分别是企业号，俾斯麦号，圣地亚哥号，大和号（其实我更想放武藏和大凤的）,新泽西号.</p>
+    <p>&copy; 2025 Battleship Gallery. All rights reserved.</p>
   </footer>
+
+  <script>
+    // 战舰数据
+    var ships = [
+      { name: "Enterprise", image: "enterprise.jpg", wiki: "#" },
+      { name: "Bismarck", image: "bismarck.jpg", wiki: "#" },
+      { name: "San Diego", image: "sandiego.jpg", wiki: "#" },
+      { name: "Yamato", image: "yamato.jpg", wiki: "#" },
+      { name: "New Jersey", image: "newjersey.jpg", wiki: "#" }
+    ];
+
+    // 显示战舰函数
+    function showShip(index) {
+      var ship = ships[index];
+      document.getElementById("ship-image").src = ship.image;
+      document.getElementById("caption").textContent = ship.name;
+      document.getElementById("wiki-link").href = ship.wiki;
+    }
+  </script>
 </body>
 </html>
