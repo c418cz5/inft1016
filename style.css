@@ -68,7 +68,7 @@ main {
 [data-theme="dark"] .wiki-link:hover {
   color: #228be6;
 }
-#w保证看看能不能用就是改变一下wiki保证 {
+#wiki-link {
   display: block;
   margin-top: 1em;
   opacity: 0.9;
