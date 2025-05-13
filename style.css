@@ -68,13 +68,3 @@ main {
 [data-theme="dark"] .wiki-link:hover {
   color: #228be6;
 }
-#wiki-link {
-  display: block;
-  margin-top: 1em;
-  opacity: 0.9;
-  transition: opacity 0.3s;
-}
-
-#wiki-link:hover {
-  opacity: 1;
-}
