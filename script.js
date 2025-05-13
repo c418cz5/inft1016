@@ -53,14 +53,10 @@ function showShip(index) {
   const imgElement = document.getElementById("ship-image");
   const wikiLink = document.getElementById("wiki-link");
   
-  // 更新图片（第二次尝试）
   imgElement.src = ship.image;
-  
-  // 更新舰船名称(我感觉没必要,算了还是试试吧）
   document.getElementById("caption").textContent = ship.name;
   
-  // 更新维基链接（关键了修改部分）
+  // 更新维基链接
   wikiLink.href = ship.wiki;
-  wikiLink.textContent = `${ship.name} Wikipedia Page`;  // 优化后的文字显示
-  wikiLink.style.display = "block";  // 确保链接可见
+  wikiLink.textContent = `About ${ship.name} on Wikipedia`;
 }
