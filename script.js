@@ -50,13 +50,13 @@ window.onload = function() {
 
 function showShip(index) {
   const ship = ships[index];
-  const imgElement = document.getElementById("ship-image");
-  const wikiLink = document.getElementById("wiki-link");
+  const img = document.getElementById("ship-image");
   
-  imgElement.src = ship.image;
+  img.onerror = function() { // 添加图片加载失败处理
+    img.src = "fallback-image.jpg";
+    alert("图片加载失败，请检查网络或图片地址");
+  };
+  
+  img.src = ship.image;
   document.getElementById("caption").textContent = ship.name;
-  
-  // 更新维基链接
-  wikiLink.href = ship.wiki;
-  wikiLink.textContent = `About ${ship.name} on Wikipedia`;
 }
