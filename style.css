@@ -48,23 +48,3 @@ main {
   margin: 0.5em;
   padding: 0.5em 1em;
 }
-.wiki-link {
-  display: block;
-  margin-top: 10px;
-  color: #007bff;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.wiki-link:hover {
-  color: #0056b3;
-  text-decoration: underline;
-}
-
-[data-theme="dark"] .wiki-link {
-  color: #4dabf7;
-}
-
-[data-theme="dark"] .wiki-link:hover {
-  color: #228be6;
-}
