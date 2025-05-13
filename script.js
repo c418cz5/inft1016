@@ -1,7 +1,7 @@
 const ships = [
   {
     name: "Enterprise",
-    image: "https://raw.githubusercontent.com/c418cz5/inft1016/main/%E4%BC%81%E4%B8%9A%E5%8F%B7.jpg"
+    image: "https://raw.githubusercontent.com/c418cz5/inft1016/main/企业号.jpg"
   },
   {
     name: "Bismarck",
