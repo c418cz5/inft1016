@@ -60,3 +60,10 @@ function showShip(index) {
   img.src = ship.image;
   document.getElementById("caption").textContent = ship.name;
 }
+
+// 可以通过以下方式测试链接有效性
+ships.forEach((ship, index) => {
+  console.log(`Ship ${index + 1}: ${ship.name}`);
+  console.log(`Image URL Test: ${new URL(ship.image).href}`);
+  console.log(`Wiki Link Test: ${new URL(ship.wiki).href}`);
+});
